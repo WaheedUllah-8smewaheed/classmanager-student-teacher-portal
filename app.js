@@ -5,7 +5,7 @@ const maxAge = 10000000000000000000000000000000000000000000000000000000000000000
 
 const express = require("express");
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 3000;
 
 
 app.set("view engine", 'ejs');
